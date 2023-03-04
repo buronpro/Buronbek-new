@@ -1,0 +1,115 @@
+.resume {
+    text-align: center;
+    padding: 20px 20px 50px;
+    margin-bottom: 50px;
+
+    &__body {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    &__title {
+        font-size: 2rem;
+    }
+
+    .resume__box--title {
+        font-size: 22px;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        list-style-type: none;
+        margin-bottom: 30px;
+    }
+
+    &__list li::before {
+        content: "";
+        width: 10px;
+        height: 9px;
+        display: inline-block;
+        position: relative;
+        margin-right: 0.6rem;
+        top: -1px;
+        border-radius: 50%;
+        background: linear-gradient(to right, $text, $primary);
+    }
+
+    &__item {
+        line-height: 1.5;
+        font-size: 19px;
+        margin-bottom: 10px;
+        letter-spacing: 0.4px;
+    }
+
+    &__link {
+        font-size: 18px;
+        color: $primary;
+        text-decoration-style: double;
+        text-decoration: none;
+        display: inline-block;
+        border: 1px solid $primary;
+        border-radius: 5px;
+        background-color: $primary;
+        color: #fff;
+        padding: 7px 15px;
+        transition: 110ms border-radius linear, 110ms color linear, 110ms background-color linear, 110ms transform linear, 110ms border-width linear, 110ms box-shadow linear;
+
+        &:hover {
+            background-color: #fff;
+            color: $primary;
+            transform: translateY(-2px) scaleY(1.02);
+            box-shadow: 0 3px 1px rgba($color: $primary, $alpha: 0.3);
+        }
+    }
+}
+
+.resume__box--title {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 880px) {
+    .resume__body {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 640px) {
+    .resume__body {
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 560px) {
+    .resume {
+        padding: 10px 10px 30px;
+        margin-bottom: 20px;
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 450px) {
+    .resume__title {
+        font-size: 1.8rem;
+    }
+
+    .resume__body {
+        padding: 0 10px;
+    }
+
+    .resume__item {
+        font-size: 17px;
+    }
+
+    .resume__list li::before {
+        width: 9px;
+        height: 8px;
+        margin-right: 0.5rem;
+    }
+
+    .resume__link {
+        font-size: 17px;
+        padding: 5px 12px;
+    }
+}

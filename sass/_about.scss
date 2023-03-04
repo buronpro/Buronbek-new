@@ -1,0 +1,390 @@
+.about {
+    &__wrapper {
+        padding: 120px 0 250px;
+        background-color: $primary;
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: $text-light;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    &__text {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.25rem;
+        color: $text-light;
+        line-height: 1.5;
+    }
+}
+
+.skills-wrapper {
+    position: relative;
+    top: -130px;
+}
+
+.skills-box {
+    padding: 0 90px;
+}
+
+.skills {
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
+}
+
+.skill {
+    width: 33.33%;
+    flex: 1;
+    text-align: center;
+    padding: 70px 45px;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    background-color: #fff;
+
+    &--middle {
+        border-left: 1px solid #e6ecf8;
+        border-right: 1px solid #e6ecf8;
+    }
+
+    &__icon {
+        color: $primary;
+        font-size: 50px;
+    }
+
+    &__title {
+        color: $text;
+        font-size: 1.5rem;
+        font-size: 24px;
+    }
+
+    &__text {
+        line-height: 1.5;
+        font-size: 18px;
+    }
+
+    &__theme {
+        color: $primary;
+        font-weight: 500;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__item {
+        line-height: 1.5;
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 1360px) {
+    .skills-box {
+        padding: 0 80px;
+    }
+}
+
+@media (max-width: 1335px) {
+    .skills-box {
+        padding: 0 70px;
+    }
+}
+
+@media (max-width: 1312px) {
+    .skills-box {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 1272px) {
+    .skills-box {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 1233px) {
+    .skills-box {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .skills-box {
+        padding: 0;
+    }
+}
+
+@media (max-width: 1175px) {
+    .skill {
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .skills {
+        flex-direction: column;
+    }
+
+    .skills-box {
+        padding: 0 50px;
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+    .skill--middle {
+        border-left: 0;
+        border-right: 0;
+        border-top: 1px solid #e6ecf8;
+        border-bottom: 1px solid #e6ecf8;
+    }
+}
+
+@media (max-width: 950px) {
+    .skills-box {
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 750px) {
+    .skills-box {
+        padding: 0;
+    }
+
+    .info__img-wrapper {
+        min-height: 220px;
+    }
+
+    .info__img {
+        width: 220px;
+    }
+
+    .info__footer {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .info__footer--img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 670px) {
+    .info__title {
+        font-size: 2.5rem;
+    }
+
+    .info__secondary {
+        font-size: 1.3rem;
+    }
+
+    .info__img-wrapper {
+        min-height: 200px;
+    }
+
+    .info__img {
+        width: 200px;
+    }
+
+    .about__wrapper {
+        padding: 100px 0 210px;
+    }
+
+    .skills-wrapper {
+        top: -110px;
+    }
+}
+
+@media (max-width: 650px) {
+    .about__text {
+        width: 80%;
+    }
+
+    .about__title {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 620px) {
+    .info__footer {
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about__wrapper {
+        padding: 80px 0 170px;
+    }
+
+    .skills-wrapper {
+        top: -90px;
+    }
+
+    .info__title {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .skills-box {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .skills {
+        border-radius: 10px;
+    }
+
+    .about__wrapper {
+        padding-bottom: 190px;
+    }
+
+    .skills-wrapper {
+        top: -90px;
+    }
+
+    .info__img-wrapper {
+        min-height: 180px;
+    }
+
+    .info__img {
+        width: 180px;
+    }
+
+    .info__title {
+        font-size: 2rem;
+    }
+
+    .about__title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .about__wrapper {
+        padding: 60px 0 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    .about__wrapper {
+        padding: 40px 0 130px;
+    }
+
+    .about__title {
+        font-size: 1.7rem;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about__text {
+        width: 90%;
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
+    .info__footer {
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+
+    .info__img-wrapper {
+        min-height: 160px;
+    }
+
+    .info__img {
+        width: 160px;
+    }
+}
+
+@media (max-width: 380px) {
+    .about__wrapper {
+        padding-bottom: 120px;
+    }
+
+    .about__title {
+        font-size: 1.6rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .about__text {
+        width: 95%;
+        font-size: 1.1rem;
+    }
+
+    .skills-box {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .skill {
+        padding: 45px 25px;
+    }
+}
+
+@media (max-width: 300px) {
+    .about__wrapper {
+        padding-top: 35px;
+    }
+
+    .about__title {
+        font-size: 1.2rem;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .about__text {
+        width: 98%;
+        font-size: 0.9rem;
+    }
+
+    .skill {
+        padding: 20px 10px;
+    }
+
+    .skill__title {
+        font-size: 19px;
+    }
+
+    .skill__icon {
+        font-size: 35px;
+    }
+
+    .info__img-wrapper {
+        min-height: 120px;
+    }
+
+    .skill__text {
+        font-size: 15px;
+    }
+
+    .skill__list {
+        font-size: 15px;
+    }
+
+    .info__img {
+        width: 120px;
+    }
+
+    .info__title {
+        font-size: 1.6rem;
+    }
+
+    .info__secondary {
+        font-size: 1.1rem;
+    }
+}
